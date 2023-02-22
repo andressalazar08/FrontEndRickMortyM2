@@ -1,7 +1,7 @@
 import Card from './Card';
 
  function Cards(props) {
-   const { characters } = props; //Aqui hizo destructuring
+   const { characters } = props; //Aqui hizo destructuring, characters es un array de objetos
    return (
       <div>
 
@@ -14,10 +14,10 @@ import Card from './Card';
                   species={char.species}
                   gender={char.gender}
                   image={char.image}
-                  onClose={char.onClose}
-                  >
+                  onClose={()=>window.alert('Emulamos que se cierra la card desde el componente mapeado')}
+                  />
 
-                  </Card>
+
                );
             })
          }

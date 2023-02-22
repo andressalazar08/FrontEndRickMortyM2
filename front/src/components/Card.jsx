@@ -1,4 +1,4 @@
-function Card(props) {
+export default function Card(props) {
    return (
       <div>
 
@@ -6,7 +6,7 @@ function Card(props) {
          <h2>{props.name}</h2>
          <h2>{props.species}</h2>
          <h2>{props.gender}</h2>
-         <img  src={props.image} alt="" />
+         <img  src={props.image} alt={props.name} />
       </div>
    );
 }
@@ -34,4 +34,3 @@ function Card({name,species,gender,image,onClose}}) {
 
 
 */
-export default Card;

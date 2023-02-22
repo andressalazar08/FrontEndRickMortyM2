@@ -1,8 +1,11 @@
-export default function SearchBar(props) {
+function SearchBar({ onSearch }) {
    return (
       <div>
       <input type='search' />
-      <button onClick={()=>{props.onSearch(5)}}>Agregar</button>
+      <button onClick={onSearch}>Agregar</button>
       </div>
    );
 }
+
+
+export default SearchBar;
